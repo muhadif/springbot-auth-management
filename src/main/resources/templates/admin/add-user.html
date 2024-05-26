@@ -159,7 +159,7 @@
                     <div class="form-group mb-3">
                         <label class="form-label">Gender</label>
                         <select class="form-select" id="gender" th:field="*{gender}">
-                            <option th:each="genderOpt : ${T(net.enjoy.springboot.registrationlogin.dto.Gender).values()}"
+                            <option th:each="genderOpt : ${T(id.muhadif.spring.authmanagement.dto.GenderDto).values()}"
                                     th:value="${genderOpt}" th:text="${genderOpt}"></option>
                         </select>
                         <p th:errors = "*{gender}" class="text-danger"
